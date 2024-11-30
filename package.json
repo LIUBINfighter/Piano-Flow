@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "npm run clean && webpack --config tools/webpack.config.dev.js",
-    "build": "npm run clean && BUILD=1 webpack --config tools/webpack.config.prod.js",
+    "start": "node --no-warnings npm run clean && webpack --config tools/webpack.config.dev.js",
+    "build": "npm run clean && cross-env BUILD=1 webpack --config tools/webpack.config.prod.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "browser-sync": "2.15.0",
     "browser-sync-webpack-plugin": "1.1.2",
     "copy-webpack-plugin": "3.0.1",
+    "cross-env": "^7.0.3",
     "css-loader": "0.23.1",
     "cssnano": "3.5.2",
     "expose-loader": "0.7.1",
