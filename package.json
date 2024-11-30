@@ -5,12 +5,13 @@
   "author": "SuneBear <hi@sunebear.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "start": "npm run clean && webpack --config tools/webpack.config.dev.js",
     "build": "npm run clean && BUILD=1 webpack --config tools/webpack.config.prod.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@tonejs/midi": "^2.0.28",
     "lodash": "4.15.0",
     "normalize.css": "4.2.0",
     "pixi.js": "4.0.3",
@@ -41,6 +42,7 @@
     "html-webpack-plugin": "2.22.0",
     "json-loader": "0.5.4",
     "postcss-loader": "0.9.1",
+    "rimraf": "^6.0.1",
     "standard": "8.0.0",
     "standard-loader": "5.0.0",
     "style-loader": "0.13.1",

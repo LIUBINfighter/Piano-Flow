@@ -13,6 +13,7 @@
         <li @click="switchMode('autoplay')" :class="{ 'is-active': mode === 'autoplay' }" themify-pseudo>Autoplay Mode</li>
         <!-- <li @click="switchMode('sheet')" :class="{ 'is-active': mode === 'sheet' }"  themify-pseudo>Sheet Music Mode</li> -->
         <li class="divider"></li>
+        <li @click="openMidiUploader">Upload MIDI<span class="more-info">⇧+U</span></li>
         <li @click="openGitHub">Fork me on GitHub</li>
       </ul>
     </dropdown>
@@ -46,6 +47,8 @@
     <sheet></sheet>
   </modal>
 
+  <MidiUploader ref="midiUploader"></MidiUploader>
+
 </div>
 </template>
 
@@ -57,11 +60,13 @@ import { getCurrentTheme } from '../utils'
 import Sheet from './common/sheet'
 import Logo from './common/logo'
 import game from '../game'
+import MidiUploader from '../components/MidiUploader.vue'
 
 export default {
   components: {
     Logo,
-    Sheet
+    Sheet,
+    MidiUploader
   },
 
   data () {
@@ -186,6 +191,11 @@ export default {
       this.mode = mode
       this.sheetModalVisible = mode === 'sheet'
       game.switchMode(mode)
+    },
+
+    openMidiUploader() {
+      // 打开MIDI上传组件
+      this.$refs.midiUploader.$refs.fileInput.click()
     }
   }
 }

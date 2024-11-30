@@ -7,6 +7,8 @@ import {
   About
 } from './views'
 
+import MidiUploader from './components/MidiUploader'
+
 Vue.use(Router)
 
 const routes = [
@@ -16,7 +18,8 @@ const routes = [
   // Routes
   { path: '/pieces', name: 'pieces', component: Pieces },
   { path: '/pieces/:id', name: 'piece', components: { default: Pieces, game: Piece } },
-  { path: '/about', name: 'about', component: About }
+  { path: '/about', name: 'about', component: About },
+  { path: '/upload', name: 'upload', component: MidiUploader }
 ]
 
 export default new Router({
