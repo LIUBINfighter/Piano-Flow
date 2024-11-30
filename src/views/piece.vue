@@ -159,7 +159,7 @@ export default {
     },
 
     openGitHub () {
-      window.open('https://github.com/SuneBear/Piano-Flow', '_blank')
+      window.open('https://github.com/LIUBINfighter/Piano-Flow', '_blank')
     },
 
     onProgress (state, progress) {
