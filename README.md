@@ -4,15 +4,22 @@
 
 原作者的仓库fork而来，原作者的仓库已经很久没有维护了，所以自己动手重构了项目,同时原作者的仓库也有值得参考的fork.
 
-从[Touch Pianist](http://touchpianist.com) 获得灵感，一路从appstore，google play，到reddit，然后是github，到本项目。
+从[Touch Pianist](http://touchpianist.com) 获得灵感，最近开发obsidian接触前端语言，想着能不能自己写一个，一路从appstore，google play，reddit，然后是github，到本项目。
 
-在发现这些开源项目之前，自己花了1-2天写了个从0开始的很粗糙的[demo](https://github.com/LIUBINfighter/Everyone-pianist)被js动画劝退，~~可以参考~~ 纯属玩具了哈哈。效果在：[Everyone-pianist](https://everyone-pianist.vercel.app/).我希望能实现上传midi文件然后能够分享，所以要加入一些后端框架和服务器/数据库服务。
+在发现这些开源项目之前，自己花了1-2天写了个从0开始的很粗糙的[demo](https://github.com/LIUBINfighter/Everyone-pianist)被js动画劝退，~~可以参考~~ 纯属~~玩具~~了哈哈。效果在：[Everyone-pianist](https://everyone-pianist.vercel.app/).
 
-[otomata-js](https://github.com/archiloque/otomata-js?tab=readme-ov-file) 这个库的作者是原项目作者致谢的仓库，感谢。
+我希望能实现上传midi文件然后能够分享/社区活动等，所以要加入一些后端框架和服务器/数据库服务。不过我还没想好用什么后端框架，以及数据库用什么。我希望至少能优先保证全前端页面的免费无广告，流畅体验和新功能实现，因为数据库等后端服务不可避免涉及到鉴权以及付费。
+
+[otomata-js](https://github.com/archiloque/otomata-js?tab=readme-ov-file) 这个库的作者是原项目作者致谢的仓库之一，感谢（虽然我还没搞懂怎么做的）。
+
+在进行这个项目的继续开发过程中，我会陆续把原作者在项目中提及的各类插件，库，框架，库的版本，以及我使用的一些参考链接，都列在下面。感谢开源社区！
+
+感谢[earslap](https://earslap.com/)开发[Touch Pianist](http://touchpianist.com)的创意，以及[SuneBear](https://github.com/SuneBear/Piano-Flow)的开源实现！
 
 ---
 
 # Piano Flow
+
 A music game follows the piano flows. Its rhythm mode inspired by Touch Pianist, thanks to Batuhan Bozkurt. The main purpose I made it was to achieve a dream of my youth and to help me practice the fundamentals of MUG.
 
 I need to be honest with you, the game has a bad playability which can't make you feel completely immersed with simple interaction. Maybe it will improve your gameplay through a virtual reality headset, but I think the best experience is on a real piano nowadays.
