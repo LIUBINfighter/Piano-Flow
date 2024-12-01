@@ -1,3 +1,17 @@
+# 介绍
+
+本项目原作者：[SuneBear](https://github.com/SuneBear/Piano-Flow)
+
+原作者的仓库fork而来，原作者的仓库已经很久没有维护了，所以自己动手重构了项目,同时原作者的仓库也有值得参考的fork.
+
+从[Touch Pianist](http://touchpianist.com) 获得灵感，一路从appstore，google play，到reddit，然后是github，到本项目。
+
+在发现这些开源项目之前，自己花了1-2天写了个从0开始的很粗糙的[demo](https://github.com/LIUBINfighter/Everyone-pianist)被js动画劝退，~~可以参考~~ 纯属玩具了哈哈。效果在：[Everyone-pianist](https://everyone-pianist.vercel.app/).我希望能实现上传midi文件然后能够分享，所以要加入一些后端框架和服务器/数据库服务。
+
+[otomata-js](https://github.com/archiloque/otomata-js?tab=readme-ov-file) 这个库的作者是原项目作者致谢的仓库，感谢。
+
+---
+
 # Piano Flow
 A music game follows the piano flows. Its rhythm mode inspired by Touch Pianist, thanks to Batuhan Bozkurt. The main purpose I made it was to achieve a dream of my youth and to help me practice the fundamentals of MUG.
 
